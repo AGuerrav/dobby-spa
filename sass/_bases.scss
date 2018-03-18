@@ -1,0 +1,130 @@
+body{
+  background-color: $carrousel;
+}
+.navbar{
+  background-color: $backColor_foot_nav;
+  padding-left: 33%;
+  font-size: 0.9em;
+  @include textlowerCase();
+  .brand{
+    color: $backColor_readMore;
+    font-size: 1.1em;
+    @include textlowerCase();
+  }
+  .navbar-nav {
+    li {
+      a{
+        color: $white;
+  		}
+  	}
+  }
+}
+.section-card{
+  padding: 0% 9% 5%;
+  background-color: $backColor_Card;
+  .card{
+    margin-top: -23%;
+  }
+  img{
+    @include borderImg ;
+  }
+  h3{
+    text-align: $center;
+  }
+  a{
+    background-color: $backColor_readMore;
+    color: $black;
+    padding: 2%;
+  }
+}
+.carrousel{
+  margin-top: 3.6%;
+  border-bottom: 2px solid black;
+}
+.welcome{
+  background-color: $backColor_welcome;
+  padding:$section_padd_predet;
+  h1{
+    color: $h1_color;
+  }
+  p{
+    font-size: $fontsizeP;
+  }
+  ul{
+    li{
+      list-style-image: url(https://www.c-and-a.com/shoplogos/c_scale,h_0.5/navigationlogos/Flower-Guide-big.png);
+    }
+  }
+}
+.two-colms{
+  background-color: $backColor_2columns;
+  padding: $section_padd_predet;
+  border-bottom: 2px solid white;
+  .left{
+    h2, p{
+      color: $color_2columns;
+      text-align: $right;
+    }
+
+    img{
+      float: left;
+      margin: $margin_img_left;
+    }
+    hr{
+      @include hrConfig;
+      text-align: $right ;
+    }
+    hr:after {
+        @include after;
+    }
+  }
+  .right{
+    h2, p{
+      color: $color_2columns;
+      text-align: left;
+    }
+    img{
+      float: $right;
+      margin: $margin_img_right;
+    }
+    hr{
+      @include hrConfig;
+      text-align: left;
+    }
+    hr:after {
+        @include after;
+    }
+  }
+}
+.footer{
+  background-color: $backColor_foot_nav;
+  color: $color_2columns;
+  padding: $section_padd_predet;
+  h2{
+
+  }
+  .info-foot{
+    padding-bottom: 3%;
+    border-bottom: 2px solid white;
+  }
+  .social{
+    img{
+      border: 5px solid $border_social ;
+    }
+
+  }
+  .quote{
+    color: $border_social;
+    .fa-quote-left{
+      float: $left;
+      margin: 9%;
+    }
+
+
+  }
+  .last-info{
+    padding: 3% 0%;
+    font-size: 12px;
+  }
+
+}
